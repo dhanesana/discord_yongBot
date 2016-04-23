@@ -14,6 +14,7 @@ module YongBot
   bot.include! Commands::Lineup
   bot.include! Commands::Kst
   bot.include! Commands::Agb
+  bot.include! Commands::Asc
 
   bot.run
 
