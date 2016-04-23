@@ -11,6 +11,7 @@ module YongBot
 
   # LOAD PLUGINS
   bot.include! Commands::Ping
+  bot.include! Commands::Lineup
 
   bot.run
 
