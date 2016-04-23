@@ -13,6 +13,7 @@ module YongBot
   bot.include! Commands::Ping
   bot.include! Commands::Lineup
   bot.include! Commands::Kst
+  bot.include! Commands::Agb
 
   bot.run
 
