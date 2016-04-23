@@ -4,7 +4,7 @@ module YongBot
     module Ping
       extend Discordrb::Commands::CommandContainer
 
-      command(:ping) do |event|
+      command(:ping, description: 'responds if alive') do |event|
         event.respond "pooong!"
       end
 
