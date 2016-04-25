@@ -16,6 +16,7 @@ module YongBot
   bot.include! Commands::Agb
   bot.include! Commands::Asc
   bot.include! Commands::Buzz
+  bot.include! Commands::Choice
 
   bot.run
 
