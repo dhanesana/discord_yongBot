@@ -20,6 +20,7 @@ module YongBot
   bot.include! Commands::Cpme
   bot.include! Commands::Csgo
   bot.include! Commands::Daum
+  bot.include! Commands::Dispatch
 
   bot.run
 
