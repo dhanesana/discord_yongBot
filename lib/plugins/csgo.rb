@@ -36,7 +36,6 @@ module YongBot
         win_ratio = ((wins / rounds) * 100).round(0)
 
         event.respond "K/D: #{kd_ratio} | HS: #{hs_ratio}% | ACC: #{accuracy}% | WIN: #{win_ratio}%"
-        end
       end
 
     end
