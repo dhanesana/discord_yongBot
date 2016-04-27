@@ -19,6 +19,7 @@ module YongBot
   bot.include! Commands::Choice
   bot.include! Commands::Cpme
   bot.include! Commands::Csgo
+  bot.include! Commands::Daum
 
   bot.run
 
