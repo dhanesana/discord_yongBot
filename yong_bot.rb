@@ -21,6 +21,7 @@ module YongBot
   bot.include! Commands::Csgo
   bot.include! Commands::Daum
   bot.include! Commands::Dispatch
+  bot.include! Commands::Eat
 
   bot.run
 
