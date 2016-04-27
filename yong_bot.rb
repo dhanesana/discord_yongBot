@@ -17,6 +17,8 @@ module YongBot
   bot.include! Commands::Asc
   bot.include! Commands::Buzz
   bot.include! Commands::Choice
+  bot.include! Commands::Cpme
+  bot.include! Commands::Csgo
 
   bot.run
 
