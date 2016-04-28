@@ -25,6 +25,7 @@ module YongBot
   bot.include! Commands::Flickr
   bot.include! Commands::Fresh
   bot.include! Commands::Gaon
+  bot.include! Commands::Genie
 
   bot.run
 
