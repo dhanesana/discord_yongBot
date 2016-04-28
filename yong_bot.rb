@@ -26,6 +26,7 @@ module YongBot
   bot.include! Commands::Fresh
   bot.include! Commands::Gaon
   bot.include! Commands::Genie
+  bot.include! Commands::Github
 
   bot.run
 
