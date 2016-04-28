@@ -22,6 +22,7 @@ module YongBot
   bot.include! Commands::Daum
   bot.include! Commands::Dispatch
   bot.include! Commands::Eat
+  bot.include! Commands::Flickr
 
   bot.run
 
