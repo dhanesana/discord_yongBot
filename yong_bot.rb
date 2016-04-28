@@ -23,6 +23,7 @@ module YongBot
   bot.include! Commands::Dispatch
   bot.include! Commands::Eat
   bot.include! Commands::Flickr
+  bot.include! Commands::Fresh
 
   bot.run
 
