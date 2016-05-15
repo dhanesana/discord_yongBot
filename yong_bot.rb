@@ -28,6 +28,7 @@ module YongBot
   bot.include! Commands::Genie
   bot.include! Commands::Github
   bot.include! Commands::Nba
+  bot.include! Commands::Horo
 
   bot.run
 
