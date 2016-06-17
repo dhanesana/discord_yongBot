@@ -29,6 +29,7 @@ module YongBot
   bot.include! Commands::Github
   bot.include! Commands::Nba
   bot.include! Commands::Horo
+  bot.include! Commands::Lol
 
   bot.run
 
