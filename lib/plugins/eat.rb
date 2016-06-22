@@ -12,7 +12,7 @@ module YongBot
               usage: '.eat [food]'
               ) do |event, *item|
         # GET FOOD ID
-        query = item.join.split(/[[:space:]]/).join(' ').downcase
+        query = item.join(' ').split(/[[:space:]]/).join(' ').downcase
         link = open("https://api.nutritionix.com/v1_1/search/#{URI.encode(query.downcase)}?results=0%3A1&cal_min=0&cal_max=50000&fields=item_name%2Cbrand_name%2Citem_id%2Cbrand_id&appId=#{ENV['NUTRITIONX_ID']}&appKey=#{ENV['NUTRITION_KEY']}").read
         result = JSON.parse(link)
         return event.respond "sorry bru nutritionix don't got #{query} in their database" if result['total_hits'] == 0
