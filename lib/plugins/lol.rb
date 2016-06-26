@@ -22,7 +22,7 @@ module YongBot
         level = result_2['games'].first['stats']['level']
         kills = result_2['games'].first['stats']['championsKilled']
         deaths = result_2['games'].first['stats']['numDeaths']
-        cs = result_2['games'].first['stats']['minionsKilled'] + result_2['games'].first['stats']['neutralMinionsKilled']
+        cs = result_2['games'].first['stats']['minionsKilled'].to_i + result_2['games'].first['stats']['neutralMinionsKilled'].to_i
         assists = result_2['games'].first['stats']['assists']
         time = (result_2['games'].first['stats']['timePlayed']/60.00).round(2)
         link_3 = open("https://global.api.pvp.net/api/lol/static-data/na/v1.2/champion/#{champ_id}?api_key=#{ENV['LOL_KEY']}").read
