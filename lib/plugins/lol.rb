@@ -9,10 +9,10 @@ module YongBot
       command(:lol,
               description: 'returns stats of most recent game from specified league of legends player',
               min_args: 1,
-              max_args: 1,
+              # max_args: 1,
               usage: '.lol [username]'
               ) do |event, *user|
-        link = open("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/#{user.join}?api_key=#{ENV['LOL_KEY']}").read
+        link = open("https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/#{user.join("%20")}?api_key=#{ENV['LOL_KEY']}").read
         result = JSON.parse(link)
         id = result.first[1]['id']
         link_2 = open("https://na.api.pvp.net/api/lol/na/v1.3/game/by-summoner/#{id}/recent?api_key=#{ENV['LOL_KEY']}").read
