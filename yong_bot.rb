@@ -5,7 +5,7 @@ module YongBot
 
   bot = Discordrb::Commands::CommandBot.new(
     token: "#{ENV['BOT_TOKEN']}",
-    application_id: ENV['APP_ID'].to_i,
+    client_id: ENV['APP_ID'].to_i,
     prefix: '.'
   )
 
