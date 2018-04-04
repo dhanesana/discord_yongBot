@@ -1,34 +1,31 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.0.0.1)
-      concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
-    addressable (2.3.8)
-    cinch (2.3.3)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    cinch (2.3.4)
     cinch-identify (1.7.0)
       cinch (~> 2.0)
-    concurrent-ruby (1.0.2)
-    discordrb (3.1.1)
-      activesupport
+    discordrb (3.2.1)
+      discordrb-webhooks (~> 3.2.0.1)
       opus-ruby
-      rbnacl
+      rbnacl (~> 3.4.0)
       rest-client
       websocket-client-simple (>= 0.3.0)
-    domain_name (0.5.20161129)
+    discordrb-webhooks (3.2.0.1)
+      rest-client
+    domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     dotenv-heroku (0.0.1)
       rake
-    event_emitter (0.2.5)
-    excon (0.54.0)
-    ffi (1.9.14)
+    event_emitter (0.2.6)
+    excon (0.62.0)
+    ffi (1.9.23)
     fuzzy_match (2.1.0)
     genius (0.1.1)
       httparty (~> 0.11.0)
-    hashie (3.4.6)
-    heroku-api (0.4.2)
+    hashie (3.5.7)
+    heroku-api (0.4.3)
       excon (~> 0.45)
       multi_json (~> 1.8)
     httmultiparty (0.3.16)
@@ -40,8 +37,7 @@ GEM
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
-    i18n (0.7.0)
-    json (1.8.3)
+    json (2.1.0)
     mechanize (2.7.5)
       domain_name (~> 0.5, >= 0.5.1)
       http-cookie (~> 1.0)
@@ -51,42 +47,44 @@ GEM
       nokogiri (~> 1.6)
       ntlm-http (~> 0.1, >= 0.1.1)
       webrobots (>= 0.0.9, < 0.2)
-    mime-types (1.25.1)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mimemagic (0.3.2)
-    mini_portile2 (2.1.0)
-    minitest (5.10.1)
-    multi_json (1.12.1)
+    mini_portile2 (2.3.0)
+    multi_json (1.13.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
-    net-http-digest_auth (1.4)
+    net-http-digest_auth (1.4.1)
     net-http-persistent (2.9.4)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
+    netrc (0.11.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
     opus-ruby (1.0.1)
       ffi
-    pg (0.19.0)
-    rake (12.0.0)
+    pg (1.0.0)
+    public_suffix (3.0.2)
+    rake (12.3.1)
     rbnacl (3.4.0)
       ffi
-    rest-client (1.6.9)
-      mime-types (~> 1.16)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     soundcloud (0.3.4)
       hashie
       httmultiparty (~> 0.3.0)
-    thread_safe (0.3.5)
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.2)
+    unf_ext (0.0.7.5)
     unidecoder (1.1.2)
-    unirest (1.1.2)
-      addressable (~> 2.3.5)
-      json (~> 1.8.1)
-      rest-client (~> 1.6.7)
+    unirest (1.0.8)
+      addressable
+      json
+      rest-client
     webrobots (0.1.2)
-    websocket (1.2.3)
+    websocket (1.2.5)
     websocket-client-simple (0.3.0)
       event_emitter
       websocket
@@ -114,7 +112,7 @@ DEPENDENCIES
   wolfram-alpha
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.13.4
+   1.16.1
